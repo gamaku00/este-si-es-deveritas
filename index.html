@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-
-
-<!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Galería de Pokemones sabrosos</title>
+  <title>Galería Pokegamer</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f2f2f2;
+      background: linear-gradient(135deg, #1e1e2f, #2f2f46);
+      color: #fff;
       margin: 0;
       padding: 20px;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #ffcc00;
+      font-size: 3em;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 40px;
     }
 
-    ul.pokemon-list {
+    .pokemon-list {
       list-style: none;
       padding: 0;
       display: flex;
@@ -29,113 +29,111 @@
       gap: 20px;
     }
 
-    ul.pokemon-list li {
-      background: white;
-      border-radius: 15px;
+    .pokemon-list li {
+      background: linear-gradient(145deg, #3b3b5c, #2b2b40);
+      border: 2px solid #ffcc00;
+      border-radius: 20px;
       padding: 15px;
-      width: 160px;
+      width: 180px;
       text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    ul.pokemon-list li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    .pokemon-list li:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 204, 0, 0.7);
     }
 
-    ul.pokemon-list img {
+    .pokemon-list img {
       width: 100px;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 5px #000);
     }
 
-    ul.pokemon-list p {
-      margin: 10px 0 0;
+    .pokemon-list p {
+      margin: 0;
       font-weight: bold;
-      color: #555;
+      color: #fff;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .pokemon-list button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #ff3333;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 0 10px #ff3333;
+    }
+
+    .pokemon-list button:hover {
+      background-color: #ff6666;
+      transform: scale(1.1);
+    }
+
+    /* Scrollbar estilo pokegamer */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ffcc00;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #2f2f46;
     }
   </style>
 </head>
 <body>
 
-  <h1>Galería de Pokemones de los bien sabrosones</h1>
+  <h1>🎮 Galería Pokegamer 🎮</h1>
 
   <ul class="pokemon-list">
     <li>
-    <p>Pikachu</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Imagen de Pikachu">
-    <button onclick="document.getElementById('pikachu-audio').play()">🔊 Escuchar</button>
-    <audio id="pikachu-audio" src="https://play.pokemonshowdown.com/audio/cries/pikachu.mp3"></audio>
-  </li>
-  <li>
-    <p>Bulbasaur</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Imagen de Bulbasaur">
-    <button onclick="document.getElementById('bulbasaur-audio').play()">🔊 Escuchar</button>
-    <audio id="bulbasaur-audio" src="https://play.pokemonshowdown.com/audio/cries/bulbasaur.mp3"></audio>
-  </li>
-  <li>
-    <p>Charmander</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Imagen de Charmander">
-    <button onclick="document.getElementById('charmander-audio').play()">🔊 Escuchar</button>
-    <audio id="charmander-audio" src="https://play.pokemonshowdown.com/audio/cries/charmander.mp3"></audio>
-  </li>
-  <li>
-    <p>Squirtle</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Imagen de Squirtle">
-    <button onclick="document.getElementById('squirtle-audio').play()">🔊 Escuchar</button>
-    <audio id="squirtle-audio" src="https://play.pokemonshowdown.com/audio/cries/squirtle.mp3"></audio>
-  </li>
-  <li>
-    <p>Jigglypuff</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="Imagen de Jigglypuff">
-    <button onclick="document.getElementById('jigglypuff-audio').play()">🔊 Escuchar</button>
-    <audio id="jigglypuff-audio" src="https://play.pokemonshowdown.com/audio/cries/jigglypuff.mp3"></audio>
-  </li>
-  <li>
-    <p>Meowth</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png" alt="Imagen de Meowth">
-    <button onclick="document.getElementById('meowth-audio').play()">🔊 Escuchar</button>
-    <audio id="meowth-audio" src="https://play.pokemonshowdown.com/audio/cries/meowth.mp3"></audio>
-  </li>
-  <li>
-    <p>Psyduck</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="Imagen de Psyduck">
-    <button onclick="document.getElementById('psyduck-audio').play()">🔊 Escuchar</button>
-    <audio id="psyduck-audio" src="https://play.pokemonshowdown.com/audio/cries/psyduck.mp3"></audio>
-  </li>
-  <li>
-    <p>Snorlax</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png" alt="Imagen de Snorlax">
-    <button onclick="document.getElementById('snorlax-audio').play()">🔊 Escuchar</button>
-    <audio id="snorlax-audio" src="https://play.pokemonshowdown.com/audio/cries/snorlax.mp3"></audio>
-  </li>
-  <li>
-    <p>Eevee</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="Imagen de Eevee">
-    <button onclick="document.getElementById('eevee-audio').play()">🔊 Escuchar</button>
-    <audio id="eevee-audio" src="https://play.pokemonshowdown.com/audio/cries/eevee.mp3"></audio>
-  </li>
-  <li>
-    <p>Vaporeon</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png" alt="Imagen de Vaporeon">
-    <button onclick="document.getElementById('vaporeon-audio').play()">🔊 Escuchar</button>
-    <audio id="vaporeon-audio" src="https://play.pokemonshowdown.com/audio/cries/vaporeon.mp3"></audio>
-  </li>
-  <li>
-    <p>Tatsugiri</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/952.png" alt="Imagen de Tatsugiri">
-    <button onclick="document.getElementById('tatsugiri-audio').play()">🔊 Escuchar</button>
-    <audio id="tatsugiri-audio" src="https://play.pokemonshowdown.com/audio/cries/tatsugiri.mp3"></audio>
-  </li>
-  <li>
-    <p>Spinarak</p>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/167.png" alt="Imagen de Spinarak">
-    <button onclick="document.getElementById('spinarak-audio').play()">🔊 Escuchar</button>
-    <audio id="spinarak-audio" src="https://play.pokemonshowdown.com/audio/cries/spinarak.mp3"></audio>
-  </li>
+      <p>Pikachu</p>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu">
+      <button onclick="document.getElementById('pikachu-audio').play()">🔊 Escuchar</button>
+      <audio id="pikachu-audio" src="https://play.pokemonshowdown.com/audio/cries/pikachu.mp3"></audio>
+    </li>
+    <li>
+      <p>Bulbasaur</p>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+      <button onclick="document.getElementById('bulbasaur-audio').play()">🔊 Escuchar</button>
+      <audio id="bulbasaur-audio" src="https://play.pokemonshowdown.com/audio/cries/bulbasaur.mp3"></audio>
+    </li>
+    <li>
+      <p>Charmander</p>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+      <button onclick="document.getElementById('charmander-audio').play()">🔊 Escuchar</button>
+      <audio id="charmander-audio" src="https://play.pokemonshowdown.com/audio/cries/charmander.mp3"></audio>
+    </li>
+    <li>
+      <p>Squirtle</p>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+      <button onclick="document.getElementById('squirtle-audio').play()">🔊 Escuchar</button>
+      <audio id="squirtle-audio" src="https://play.pokemonshowdown.com/audio/cries/squirtle.mp3"></audio>
+    </li>
+    <li>
+      <p>Jigglypuff</p>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="Jigglypuff">
+      <button onclick="document.getElementById('jigglypuff-audio').play()">🔊 Escuchar</button>
+      <audio id="jigglypuff-audio" src="https://play.pokemonshowdown.com/audio/cries/jigglypuff.mp3"></audio>
+    </li>
+    <li>
+      <p>Snorlax</p>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/143.png" alt="Snorlax">
+      <button onclick="document.getElementById('snorlax-audio').play()">🔊 Escuchar</button>
+      <audio id="snorlax-audio" src="https://play.pokemonshowdown.com/audio/cries/snorlax.mp3"></audio>
+    </li>
+    <!-- Puedes seguir agregando más pokémon igual -->
   </ul>
 
 </body>
 </html>
 
-
-</html>
